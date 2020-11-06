@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="90.747643mm" height="192.68977mm" version="1.1" viewBox="0 0 90.747643 192.68979" id="svg277" sodipodi:docname="interface_4.svg" inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata id="metadata281">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1600" inkscape:window-height="1161" id="namedview279" showgrid="false" fit-margin-top="0.5" fit-margin-left="0.5" fit-margin-bottom="0.5" fit-margin-right="0.5" inkscape:zoom="1.2446237" inkscape:cx="160.96" inkscape:cy="-312.55017" inkscape:window-x="818" inkscape:window-y="177" inkscape:window-maximized="0" inkscape:current-layer="svg277" inkscape:snap-global="false" inkscape:document-rotation="0" />
+  <defs id="defs20">
+    <rect x="7.7499032" y="199.53841" width="15.799359" height="74.582985" id="rect1545" />
+    <marker style="overflow:visible" id="marker1454" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow2Mend" inkscape:isstock="true">
+      <path transform="scale(-0.6)" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1" id="path1452" />
+    </marker>
+    <marker style="overflow:visible" id="Arrow1Send" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Send" inkscape:isstock="true">
+      <path transform="matrix(-0.2,0,0,-0.2,-1.2,0)" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1" d="M 0,0 5,-5 -12.5,0 5,5 Z" id="path1036" />
+    </marker>
+    <marker style="overflow:visible" id="marker1334" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow2Mend" inkscape:isstock="true">
+      <path transform="scale(-0.6)" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#002255;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1" id="path1048" />
+    </marker>
+    <marker style="overflow:visible" id="Arrow1Lend" refX="0" refY="0" orient="auto" inkscape:stockid="Arrow1Lend" inkscape:isstock="true">
+      <path transform="matrix(-0.8,0,0,-0.8,-10,0)" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#002255;stroke-width:1pt;stroke-opacity:1" d="M 0,0 5,-5 -12.5,0 5,5 Z" id="path1024" />
+    </marker>
+    <rect x="5.0441017" y="100.97558" width="69.612386" height="10.252076" id="rect3522" />
+    <marker id="Arrow1Mstart" overflow="visible" orient="auto">
+      <path transform="matrix(0.4,0,0,0.4,4,0)" d="M 0,0 5,-5 -13,0 5,5 Z" fill="#ffffff" fill-rule="evenodd" stroke="#000000" stroke-width="1pt" id="path2" />
+    </marker>
+    <marker id="marker5080" overflow="visible" orient="auto">
+      <path transform="scale(-0.6)" d="m 8.7,4 -11,-4 11,-4 C 7,-1.6 7,1.6 8.7,4 Z" fill-rule="evenodd" stroke="#000000" stroke-linejoin="round" stroke-width="0.62" id="path5" />
+    </marker>
+    <marker id="Arrow2Mend" overflow="visible" orient="auto">
+      <path transform="scale(-0.6)" d="m 8.7,4 -11,-4 11,-4 C 7,-1.6 7,1.6 8.7,4 Z" fill-rule="evenodd" stroke="#000000" stroke-linejoin="round" stroke-width="0.62" id="path8" />
+    </marker>
+    <marker id="marker5080-5" overflow="visible" orient="auto">
+      <path transform="scale(-0.6)" d="m 8.7,4 -11,-4 11,-4 C 7,-1.6 7,1.6 8.7,4 Z" fill-rule="evenodd" stroke="#000000" stroke-linejoin="round" stroke-width="0.62" id="path11" />
+    </marker>
+    <marker id="marker5080-5-4" overflow="visible" orient="auto">
+      <path transform="scale(-0.6)" d="m 8.7,4 -11,-4 11,-4 C 7,-1.6 7,1.6 8.7,4 Z" fill-rule="evenodd" stroke="#000000" stroke-linejoin="round" stroke-width="0.62" id="path14" />
+    </marker>
+    <marker id="marker5080-0" overflow="visible" orient="auto">
+      <path transform="scale(-0.6)" d="m 8.7,4 -11,-4 11,-4 C 7,-1.6 7,1.6 8.7,4 Z" fill-rule="evenodd" stroke="#002255" stroke-linejoin="round" stroke-width="0.62" id="path17" />
+    </marker>
+    <marker id="Arrow2Mend-9" overflow="visible" orient="auto">
+      <path transform="scale(-0.6)" d="m 8.7,4 -11,-4 11,-4 C 7,-1.6 7,1.6 8.7,4 Z" fill-rule="evenodd" stroke="#000000" stroke-linejoin="round" stroke-width="0.62" id="path11-7" />
+    </marker>
+  </defs>
+  <text x="37.511272" y="-20.944902" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.21" xml:space="preserve" id="text37"><tspan x="37.511272" y="-20.944902" id="tspan35">Suitable</tspan></text>
+  <text x="38.442703" y="-25.891554" font-size="4.6px" stroke-width="0.26" style="font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px" xml:space="preserve" id="text43"><tspan sodipodi:role="line" id="tspan2691" x="38.442703" y="-25.891554"><tspan x="38.442703" y="-25.891554" id="tspan41">[Training Data]</tspan></tspan></text>
+  <text x="73.526909" y="-20.944902" font-size="3.4px" stroke-width="0.21" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px" xml:space="preserve" id="text47"><tspan x="73.526909" y="-20.944902" id="tspan45">Not Suitable</tspan></text>
+  <rect x="37.425213" y="-20.035112" width="53.191563" height="3.0351827" fill="#ffd5d5" stroke="#000000" stroke-width="0.17296" id="rect51" />
+  <rect id="bar_suita" x="37.425213" y="-20.035112" width="36.474213" height="3.1244528" fill="#008000" stroke="#000000" stroke-width="0.17296" />
+  <rect x="37.425213" y="-12.982779" width="53.191563" height="3.0351827" fill="#ffd5d5" stroke="#000000" stroke-width="0.17296" id="rect54" />
+  <rect x="37.425213" y="-12.982779" width="36.474213" height="3.1244528" fill="#008000" stroke="#000000" stroke-width="0.17296" id="rect56" />
+  <g id="g3872">
+    <rect x="4.9789624" y="34.011532" width="15.221163" height="13.392073" fill="#d5e5ff" stroke="#000000" stroke-width="0.171592" id="rect58" />
+    <g transform="matrix(0.7428075,0,0,0.7428075,-58.472185,-1.0014148)" stroke="#000000" stroke-width="0.64" id="g66">
+      <path transform="scale(0.26)" d="m 352,197 -1.7,0.55 -0.42,3.5 0.23,0.92 0.99,1.9 -2.8,2 -1.5,-1.5 -0.8,-0.5 -3.5,-0.68 -1.1,1.4 1.7,3.1 0.72,0.61 1.9,0.94 -1.1,3.3 -2.1,-0.36 -0.94,0.066 -3.2,1.5 v 1.8 l 3.2,1.5 0.94,0.066 2.1,-0.36 1.1,3.3 -1.9,0.94 -0.72,0.61 -1.7,3.1 1.1,1.4 3.5,-0.68 0.8,-0.5 1.5,-1.5 2.8,2 -0.99,1.9 -0.23,0.92 0.42,3.5 1.7,0.55 2.4,-2.6 0.36,-0.87 0.3,-2.1 h 3.4 l 0.3,2.1 0.36,0.87 2.4,2.6 1.7,-0.55 0.42,-3.5 -0.23,-0.92 -0.99,-1.9 2.8,-2 1.5,1.5 0.8,0.5 3.5,0.68 1.1,-1.4 -1.7,-3.1 -0.72,-0.61 -1.9,-0.94 1.1,-3.3 2.1,0.36 0.94,-0.066 3.2,-1.5 v -1.8 l -3.2,-1.5 -0.94,-0.066 -2.1,0.36 -1.1,-3.3 1.9,-0.94 0.72,-0.61 1.7,-3.1 -1.1,-1.4 -3.5,0.68 -0.8,0.5 -1.5,1.5 -2.8,-2 0.99,-1.9 0.23,-0.92 -0.42,-3.5 -1.7,-0.55 -2.4,2.6 -0.36,0.88 -0.3,2.1 h -3.4 l -0.3,-2.1 -0.36,-0.88 z m 4.8,11 a 6.4,6.4 0 0 1 0.033,0 6.4,6.4 0 0 1 6.4,6.4 6.4,6.4 0 0 1 -6.4,6.4 6.4,6.4 0 0 1 -6.4,-6.4 6.4,6.4 0 0 1 6.3,-6.4 z" id="path62" />
+      <path transform="scale(0.26)" d="m 382,211 -1.5,0.34 -0.82,3.6 0.14,0.64 1.1,2.1 -2.5,2 -1.9,-1.5 -0.6,-0.29 -3.7,0.01 -0.67,1.4 2.3,2.9 0.59,0.29 2.3,0.5 v 3.2 l -2.3,0.5 -0.59,0.29 -2.3,2.9 0.67,1.4 3.7,0.01 0.6,-0.29 1.9,-1.5 2.5,2 -1.1,2.1 -0.14,0.64 0.82,3.6 1.5,0.35 2.3,-2.9 0.15,-0.64 -0.035,-2.4 3.1,-0.71 1,2.2 0.41,0.52 3.3,1.6 1.2,-0.97 -0.8,-3.6 -0.41,-0.52 -1.9,-1.5 1.4,-2.9 2.3,0.57 0.66,-0.004 3.3,-1.6 v -1.6 l -3.3,-1.6 -0.66,-0.002 -2.3,0.57 -1.4,-2.9 1.9,-1.5 0.41,-0.52 0.8,-3.6 -1.2,-0.97 -3.3,1.6 -0.41,0.52 -1,2.2 -3.1,-0.7 0.035,-2.4 -0.15,-0.64 z m 2.3,8.7 a 4.8,4.8 0 0 1 4.8,4.8 4.8,4.8 0 0 1 -4.8,4.8 4.8,4.8 0 0 1 -4.8,-4.8 4.8,4.8 0 0 1 4.8,-4.8 z" id="path64" />
+    </g>
+  </g>
+  <rect id="select_a" x="30.172531" y="35.673683" width="26" height="52" fill="none" stroke="#000000" stroke-width="0.48" style="stroke:#ececec" />
+  <text x="27.023439" y="37.812241" fill="#000000" font-family="sans-serif" font-size="4.2px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="line-height:1.25" xml:space="preserve" id="text132"><tspan x="27.023439" y="37.812241" id="tspan130">A</tspan></text>
+  <rect id="select_b" x="59.643501" y="35.673683" width="26" height="52" fill="none" stroke="#000000" stroke-width="0.48" style="stroke:#ececec" />
+  <text x="56.773979" y="37.812241" fill="#000000" font-family="sans-serif" font-size="4.2px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="line-height:1.25" xml:space="preserve" id="text139"><tspan x="56.773979" y="37.812241" id="tspan137">B</tspan></text>
+  <text x="5.3430123" y="124.50442" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.26" xml:space="preserve" id="text151"><tspan x="5.3430123" y="124.50442" id="tspan149">Accuracy</tspan></text>
+  <g id="g1557" transform="translate(3.1667386,-1.8631142)">
+    <circle cx="15.934983" cy="131.46599" r="4.1999998" fill="none" stroke="#000080" stroke-width="0.79" id="circle165" />
+    <circle cx="15.934983" cy="131.46599" r="2.3" fill="none" stroke="#000080" stroke-width="0.79" id="circle167" />
+    <circle cx="15.934983" cy="131.46599" r="0.81" fill="#000080" stroke="#000080" stroke-width="0.79" id="circle169" />
+  </g>
+  <path d="m 19.101723,129.60294 1.7,-1.29999" fill="#ffffff" marker-end="url(#Arrow1Mstart)" stroke="#000000" stroke-width="0.79" id="path171" />
+  <g transform="translate(8.6017116,13.557036)" stroke="#afafe9" stroke-width="0.79" id="g179">
+    <circle cx="10" cy="131" r="4.1999998" fill="none" id="circle173" />
+    <circle cx="10" cy="131" r="2.3" fill="none" id="circle175" />
+    <circle cx="10" cy="131" r="0.81" fill="#afafe9" id="circle177" />
+  </g>
+  <g transform="translate(8.6017116,19.815384)" stroke="#afafe9" stroke-width="0.79" id="g187">
+    <circle cx="10" cy="144" r="4.1999998" fill="none" id="circle181" />
+    <circle cx="10" cy="144" r="2.3" fill="none" id="circle183" />
+    <circle cx="10" cy="144" r="0.81" fill="#afafe9" id="circle185" />
+  </g>
+  <g transform="translate(8.6017116,24.073706)" stroke="#afafe9" stroke-width="0.79" id="g199">
+    <circle cx="10" cy="159" r="4.1999998" fill="none" id="circle193" />
+    <circle cx="10" cy="159" r="2.3" fill="none" id="circle195" />
+    <circle cx="10" cy="159" r="0.81" fill="#afafe9" id="circle197" />
+  </g>
+  <rect id="base_bar" x="27.809643" y="127.90915" width="58.890167" height="3.4088702" fill="#ffffff" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.457507" />
+  <rect id="bar_correct" x="27.809643" y="127.90915" width="40.913166" height="3.509131" fill="#0000ff" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.457507" />
+  <text x="27.422623" y="126.48493" fill="#000000" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:2.82222px;line-height:1.25" xml:space="preserve" id="text205"><tspan x="27.422623" y="126.48493" id="tspan203">Correct</tspan></text>
+  <text x="73.683487" y="126.71254" fill="#000000" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:2.82222px;line-height:1.25" xml:space="preserve" id="text209"><tspan x="73.683487" y="126.71254" id="tspan207">Incorrect</tspan></text>
+  <rect x="27.809643" y="138.82507" width="58.890167" height="3.4088702" fill="#e6e6e6" stroke="#000000" stroke-width="0.911843" id="rect211" style="stroke-width:0.457507" />
+  <rect id="bar_dpa" x="27.805511" y="138.8203" width="40.921421" height="3.3734353" fill="#4d4d4d" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.44862" />
+  <text x="61.311069" y="154.01747" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:2.82222px;line-height:1.25" xml:space="preserve" id="text220"><tspan id="tspan3354" x="0" y="0" sodipodi:role="line"><tspan x="61.311069" y="154.01747" id="tspan3356" /></tspan></text>
+  <text x="27.395061" y="138.02298" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:2.82222px;line-height:1.25" xml:space="preserve" id="text224"><tspan x="27.395061" y="138.02298" id="tspan222">Selected</tspan></text>
+  <text x="68.2995" y="137.88649" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:2.82222px;line-height:1.25" xml:space="preserve" id="text228"><tspan x="68.2995" y="137.88649" id="tspan226">Not Selected</tspan></text>
+  <rect x="27.809643" y="144.8407" width="58.890167" height="3.4088702" fill="#e6e6e6" stroke="#000000" stroke-width="0.911843" id="rect230" style="stroke-width:0.457507" />
+  <rect id="bar_dpb" x="27.805519" y="144.83591" width="31.622967" height="3.3734283" fill="#4d4d4d" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.448633" />
+  <rect x="27.809643" y="158.87717" width="58.890167" height="3.4088702" fill="#c6e9af" stroke="#000000" stroke-width="0.911843" id="rect233" style="stroke-width:0.457507" />
+  <rect id="bar_eoa" x="27.806854" y="158.87393" width="40.918743" height="3.4171882" fill="#338000" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.451505" />
+  <rect x="27.809643" y="164.89282" width="58.890167" height="3.4088702" fill="#c6e9af" stroke="#000000" stroke-width="0.911843" id="rect236" style="stroke-width:0.457507" />
+  <rect id="bar_eob" x="27.805836" y="164.88841" width="31.622334" height="3.3837371" fill="#338000" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.449313" />
+  <rect x="27.809643" y="177.92674" width="58.890167" height="3.4088702" fill="#ffd5d5" stroke="#000000" stroke-width="0.911843" id="rect247" style="stroke-width:0.457507" />
+  <rect id="bar_ppa" x="27.806583" y="177.9232" width="32.860626" height="3.4082878" fill="#338000" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.450928" />
+  <rect x="27.809643" y="183.9424" width="58.890167" height="3.4088702" fill="#ffd5d5" stroke="#000000" stroke-width="0.911843" id="rect250" style="stroke-width:0.457507" />
+  <rect id="bar_ppb" x="27.804226" y="183.93613" width="21.707211" height="3.4260356" fill="#338000" stroke="#000000" stroke-width="0.911843" style="stroke-width:0.445846" />
+  <text x="24.930431" y="141.84146" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:3.52778px;line-height:1.25" xml:space="preserve" id="text255"><tspan x="24.930431" y="141.84146" id="tspan253">A</tspan></text>
+  <text x="24.877892" y="147.98347" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:3.52778px;line-height:1.25" xml:space="preserve" id="text259"><tspan x="24.877892" y="147.98347" id="tspan257">B</tspan></text>
+  <text x="24.930431" y="161.814" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:3.52778px;line-height:1.25" xml:space="preserve" id="text263"><tspan x="24.930431" y="161.814" id="tspan261">A</tspan></text>
+  <text x="24.877892" y="167.92233" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:3.52778px;line-height:1.25" xml:space="preserve" id="text267"><tspan x="24.877892" y="167.92233" id="tspan265">B</tspan></text>
+  <text x="24.930431" y="180.94955" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:3.52778px;line-height:1.25" xml:space="preserve" id="text271"><tspan x="24.930431" y="180.94955" id="tspan269">A</tspan></text>
+  <text x="24.877892" y="186.92828" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:3.52778px;line-height:1.25" xml:space="preserve" id="text275"><tspan x="24.877892" y="186.92828" id="tspan273">B</tspan></text>
+  <text xml:space="preserve" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583" x="4.8240957" y="138.60898" id="text2418"><tspan sodipodi:role="line" id="tspan2416" x="4.8240957" y="138.60898">Demographic</tspan><tspan sodipodi:role="line" x="4.8240957" y="142.13675" id="tspan2420">Parity</tspan></text>
+  <text xml:space="preserve" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583" x="5.7137127" y="176.99799" id="text2424"><tspan sodipodi:role="line" id="tspan2422" x="5.7137127" y="176.99799">Precision</tspan><tspan sodipodi:role="line" x="5.7137127" y="180.52576" id="tspan2426">Parity</tspan></text>
+  <text xml:space="preserve" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583" x="6.0091634" y="157.8811" id="text2430"><tspan sodipodi:role="line" x="6.0091634" y="157.8811" id="tspan2432">Opportunity</tspan><tspan sodipodi:role="line" x="6.0091634" y="161.40887" id="tspan3186">Parity</tspan></text>
+  <text x="35.278652" y="-17.598927" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:2.82222px;line-height:1.25" xml:space="preserve" id="text271-3"><tspan x="35.278652" y="-17.598927" id="tspan269-6" style="stroke-width:0.26">A</tspan></text>
+  <text x="35.236622" y="-10.398524" font-family="sans-serif" font-size="3.5px" letter-spacing="0px" stroke-width="0.26" word-spacing="0px" style="font-size:2.82222px;line-height:1.25" xml:space="preserve" id="text275-7"><tspan x="35.236622" y="-10.398524" id="tspan273-5" style="stroke-width:0.26">B</tspan></text>
+  <g id="g3311" transform="translate(1.0583334,-3.7041669)">
+    <path style="fill:#999999;stroke:#000000;stroke-width:0.361556" d="M 6.1062656,24.181345 H 16.476051 V 12.709351 L 14.548116,10.781417 H 6.1033396 v 13.422277" id="path2504" sodipodi:nodetypes="cccccc" />
+    <path style="fill:none;stroke:#000000;stroke-width:0.361556" d="M 16.476051,12.709351 H 14.511614 V 10.813318" id="path2506" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.321235" d="M 7.5366656,12.800018 H 14.286781" id="path2508" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.321235" d="M 7.4298226,15.338842 H 15.237878" id="path2510-3" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.321235" d="M 7.4298226,22.354318 H 15.237878" id="path2510-5" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.321235" d="M 7.4351496,17.533742 H 15.243205" id="path2510-6" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.321235" d="M 7.3821886,20.131644 H 15.190244" id="path2510-9" />
+    <circle cx="8.1414633" cy="12.866213" r="0.90903252" fill="#f4d7d7" id="circle109-2" style="stroke:#000000;stroke-width:0.469178" />
+    <circle cx="8.1414633" cy="15.215096" r="0.90903252" fill="#ffff00" id="circle111-7" style="stroke:#000000;stroke-width:0.469178" />
+    <circle cx="8.1414633" cy="17.563982" r="0.90903252" fill="#d7d7f4" id="circle113-0" style="stroke:#000000;stroke-width:0.469178" />
+    <circle cx="8.1414633" cy="19.912867" r="0.90903252" fill="#ffff00" id="circle115-9" style="stroke:#000000;stroke-width:0.469178" />
+    <circle cx="8.1414633" cy="22.261751" r="0.90903252" fill="#d7d7f4" id="circle117-3" style="stroke:#000000;stroke-width:0.469178" />
+  </g>
+  <text xml:space="preserve" style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583" x="23.793976" y="120.36102" id="text3518"><tspan sodipodi:role="line" id="tspan3516" x="23.793976" y="120.36102" style="font-size:4.23333px">[Performance Targets]</tspan></text>
+  <text xml:space="preserve" id="text3520" style="font-style:italic;font-size:3.52778px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect3522);fill:#000000" transform="translate(17.201325,1.8058462)" x="42.543514" y="0"><tspan x="7.6794022" y="104.09587"><tspan style="-inkscape-font-specification:'sans-serif Italic';text-anchor:middle">As a B who is eligible, we are half as </tspan></tspan><tspan x="8.2375081" y="108.5056"><tspan style="-inkscape-font-specification:'sans-serif Italic';text-anchor:middle">likely to be </tspan><tspan style="-inkscape-font-specification:'sans-serif Italic';text-anchor:middle">selected for the thingy.`</tspan></tspan></text>
+  <text x="43.342201" y="33.155872" font-size="4.59999px" stroke-width="0.26" style="line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px" xml:space="preserve" id="text43-3"><tspan x="43.342201" y="33.155872" id="tspan41-6" style="stroke-width:0.26">[Predictions]</tspan></text>
+  <text xml:space="preserve" id="text1543" style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1545);fill:#000000" transform="translate(-2.1249288,-1.8631142)" />
+  <text x="-25.258593" y="101.93042" font-size="4.6px" stroke-width="0.26" style="font-size:3.175px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;text-anchor:middle" xml:space="preserve" id="text43-6"><tspan sodipodi:role="line" x="-25.258593" y="101.93042" style="stroke-width:0.26" id="tspan2845">[New Cohort]</tspan></text>
+  <path style="fill:none;stroke:#000000;stroke-width:0.698422" d="m 12.153979,47.511229 v 7.285294" id="path2849" />
+  <path style="fill:none;stroke:#000000;stroke-width:0.510694" d="m 35.340294,28.558001 h -9.663998 v 62.989455 h 8.403722" id="path2851" />
+  <g id="g3285" transform="translate(65.48351,-71.933522)">
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.264583" d="m 6.951159,92.186154 h 10.369785 v -11.472 l -1.927936,-1.92793 H 6.948233 v 13.42228" id="path2504-5" sodipodi:nodetypes="cccccc" />
+    <path style="fill:none;stroke:#000000;stroke-width:0.264583" d="m 17.320944,80.714154 h -1.964437 v -1.89603" id="path2506-3" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.264583" d="m 8.381559,80.804824 h 6.750114" id="path2508-5" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.264583" d="M 8.274716,83.343644 H 16.08277" id="path2510-3-6" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.264583" d="M 8.274716,90.359124 H 16.08277" id="path2510-5-2" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.264583" d="m 8.280043,85.538544 h 7.808055" id="path2510-6-9" />
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:0.264583" d="m 8.227082,88.136454 h 7.808054" id="path2510-9-1" />
+    <circle cx="8.9863548" cy="80.871025" r="0.90903252" fill="#f4d7d7" id="circle109-2-2" style="stroke:#000000;stroke-width:0.264583" />
+    <circle cx="8.9863548" cy="83.219902" r="0.90903252" fill="#ffff00" id="circle111-7-7" style="stroke:#000000;stroke-width:0.264583" />
+    <circle cx="8.9863548" cy="85.568794" r="0.90903252" fill="#d7d7f4" id="circle113-0-0" style="stroke:#000000;stroke-width:0.264583" />
+    <circle cx="8.9863548" cy="87.917671" r="0.90903252" fill="#ffff00" id="circle115-9-9" style="stroke:#000000;stroke-width:0.264583" />
+    <circle cx="8.9863548" cy="90.266563" r="0.90903252" fill="#d7d7f4" id="circle117-3-3" style="stroke:#000000;stroke-width:0.264583" />
+  </g>
+  <path style="fill:none;stroke:#000000;stroke-width:0.510694" d="M 78.628402,91.547456 H 88.2924 V 28.558001 h -8.403722" id="path2851-6" />
+  <path style="fill:none;stroke:#000000;stroke-width:0.443398" d="m 12.233671,26.255367 v 7.669796" id="path2849-1" />
+  <path style="fill:none;stroke:#000000;stroke-width:0.52916669" d="m 12.235519,71.230847 v 7.648976" id="path2849-8" />
+  <path style="fill:none;stroke:#000000;stroke-width:0.529167" d="M 15.5752,1.5095725 H 2.2851515 V 26.303411 H 13.842053" id="path2851-7" />
+  <path style="fill:none;stroke:#000000;stroke-width:0.529167" d="M 75.105524,26.303411 H 88.395567 V 1.5095725 h -11.5569" id="path2851-6-9" />
+  <path style="fill:none;stroke:#000000;stroke-width:0.653446" d="M 15.084787,119.2717 H 1.3558897 v 72.59136 H 13.294411" id="path2851-2" />
+  <path style="fill:none;stroke:#000000;stroke-width:0.653446" d="M 76.580865,191.86306 H 90.309758 V 119.2717 H 78.371239" id="path2851-6-0" />
+  <text xml:space="preserve" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;stroke-width:0.264583" x="86.551018" y="154.47224" id="text3363"><tspan sodipodi:role="line" id="tspan3361" x="86.551018" y="154.47224">Not Selected</tspan><tspan sodipodi:role="line" x="86.551018" y="158.00002" id="tspan3365">&amp; Suitable</tspan></text>
+  <text xml:space="preserve" style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583" x="27.987463" y="153.84482" id="text3376"><tspan sodipodi:role="line" id="tspan3374" x="27.987463" y="153.84482">Selected</tspan><tspan sodipodi:role="line" x="27.987463" y="157.37259" id="tspan3378">&amp; Suitable</tspan></text>
+  <text xml:space="preserve" style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583" x="27.861618" y="173.3813" id="text3376-7"><tspan sodipodi:role="line" id="tspan3374-5" x="27.861618" y="173.3813">Selected</tspan><tspan sodipodi:role="line" x="27.861618" y="176.90909" id="tspan3378-9">&amp; Suitable</tspan></text>
+  <text xml:space="preserve" style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;stroke-width:0.264583" x="87.238564" y="173.16498" id="text3363-2"><tspan sodipodi:role="line" id="tspan3361-2" x="87.238564" y="173.16498">Selected</tspan><tspan sodipodi:role="line" x="87.238564" y="176.69276" id="tspan3365-8">&amp; Not Suitable</tspan></text>
+  <rect x="4.2069407" y="55.044807" width="16.201246" height="16.201246" fill="#999999" id="rect119" style="stroke:#000000;stroke-width:0.79375" />
+  <path d="m 14.479511,63.625912 h 4.943883" fill="none" marker-end="url(#Arrow2Mend-9)" stroke="#000000" stroke-width="0.215721" id="path68" style="marker-end:url(#Arrow2Mend-9)" />
+  <g id="g3931" transform="rotate(-90,12.383991,63.361327)">
+    <g transform="matrix(0.88796811,0,0,0.88796811,-101.37476,-27.077009)" fill="none" stroke="#000000" stroke-width="0.26px" id="g66-3">
+      <path d="m 121,96 7.1,6.4 -7.2,-3.3" id="path60" />
+      <path d="m 121,102 7.1,0.16 -7,2.9" id="path62-6" />
+      <path d="m 128,102 -7,6.1" id="path64-1" />
+    </g>
+    <circle cx="6.4785004" cy="58.279507" r="0.8275305" fill="#f4d7d7" stroke="#000000" stroke-width="0.426783" id="circle70" />
+    <circle cx="6.4785004" cy="60.975956" r="0.8275305" fill="#ffff00" stroke="#000000" stroke-width="0.426783" id="circle72" />
+    <circle cx="6.4785004" cy="63.625912" r="0.8275305" fill="#d7d7f4" stroke="#000000" stroke-width="0.426783" id="circle74" />
+    <circle cx="6.4785004" cy="66.322357" r="0.8275305" fill="#ffff00" stroke="#000000" stroke-width="0.426783" id="circle76" />
+    <circle cx="6.4785004" cy="68.972313" r="0.8275305" fill="#d7d7f4" stroke="#000000" stroke-width="0.426783" id="circle78" />
+  </g>
+  <rect x="10.946236" y="61.859276" width="4.0911622" height="4.0911622" fill="#999999" stroke="#000000" stroke-width="0.426783" id="rect80" style="fill:#000000" />
+  <text xml:space="preserve" style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583" x="35.55547" y="8.7946529" id="text3892"><tspan sodipodi:role="line" id="tspan3890" x="35.55547" y="8.7946529" /></text>
+</svg>
