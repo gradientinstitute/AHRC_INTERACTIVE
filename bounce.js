@@ -62,6 +62,8 @@ function wid_animation() {
     }
 }
 
+wid_animation(); // init everything
+
 
 function slidefn() {
     // handle the transitions on this.value
@@ -80,7 +82,6 @@ function slidefn() {
     }
 
 }
-slidefn();
 slider.oninput = slidefn;
 
 
