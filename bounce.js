@@ -1,24 +1,25 @@
 'use strict';  // Enforce variable declarations etc
 
 
-// drive the slider
-var slider = document.getElementById("ranger");
+// drive the custom slider
+var gui = document.getElementById("gradient_widget");
 
-// Update the current slider value (each time you drag the slider handle)
-var msw = 133, fsw = 97.5; // male select width
-var mst = 133, fst = 97.5; // female select width
-var fro = -8, frt = -8;  // reject box offset
-var rej = 0, rejt = 0;  // swapover of rejection reason label
+// Positions of gui elements when updating
+var ms_width = [131.5, 131.5, 123];
+var fs_width = [96.5, 105.5, 114];
+var rej_reason = [0, 0, 1];  // one-hot indicator with linear transition
+var msw = ms_width[0], fsw = fs_width[0], rej = rej_reason[0]
+var mst = msw, fst=fsw, rejt = rej; // and default targets
+var wid_anim = null;  // animation timer 
 
-
-var wid_anim = null;
+// Gui components defined in demo.html
 var ws = document.getElementById("woman_selector");
 var ms = document.getElementById("man_selector");
 var fr = document.getElementById("bias_reject");
 var rej_err = document.getElementById("reject_err");
 var rej_bias = document.getElementById("reject_bias");
 
-
+// Linear transition step
 function towards(x, y, step) {
     if (x < y) {
         x += step;
@@ -34,55 +35,113 @@ function towards(x, y, step) {
 
 
 function wid_animation() {
-    // called frequently
+    // animation timestep for when sliders are adjusted
     var step = 0.5;
     msw = towards(msw, mst, step);
     fsw = towards(fsw, fst, step);
-    fro = towards(fro, frt, step);
     rej = towards(rej, rejt, .04); // same step?
+    var fro = fsw + .257;  // female reject box offset = rhs of female select box
 
+    // Set animation positions
     ws.setAttribute("width", fsw);
     ms.setAttribute("width", msw);
-    fr.setAttribute("x", 128 + fro);
-    fr.setAttribute("width", 16.9 - fro);
-   
+    fr.setAttribute("x", fsw + .257);
+    fr.setAttribute("width", 123.6 - fro);
+
+    // non-linear blend between the two possible annotations
     var a = Math.min(2 * rej, 1);
     var b = Math.min(2 * (1-rej), 1);
 
     // set relative to the group scroll-in transformation
-    rej_bias.setAttribute("transform",
-        "translate(" + (-18.6 + 100 * a) + ", -40.6)")
-    rej_err.setAttribute("transform",
-        "translate(" + (-18.2 + 100 * b) + ", -40.4)");
+    rej_bias.setAttribute("transform", "translate(" + (100 * a) + ", 0)")
+    rej_err.setAttribute("transform", "translate(" + (100 * b) + ", 0)");
 
-
-    if (msw == mst && fsw == fst && fro == frt && rej == rejt) {
+    // If finished, we can clear the animation timer
+    if (msw == mst && fsw == fst && rej == rejt) {
         clearInterval(wid_anim);
         wid_anim = null;
     }
 }
 
+// init gui components to calculated positions
 wid_animation(); // init everything
 
 
-function slidefn() {
-    // handle the transitions on this.value
-    var i = slider.value;
-    var ms_width = [133, 133, 123];
-    var fs_width = [97.5, 106, 114];
-    var fr_off = [-8, 0, 8];
-    var rej_reason = [0, 0, 1];  // indicator variable
-    mst = ms_width[i];
-    fst = fs_width[i];
-    frt = fr_off[i];
-    rejt = rej_reason[i];
+function coords(evt) {
+    var svg_pt = gui.createSVGPoint();
+    var bound = gui.getBoundingClientRect();
+    svg_pt.x = evt.clientX - gui.clientLeft;
+    svg_pt.y = evt.clientY - gui.clientTop;
+    var loc = svg_pt.matrixTransform(gui.getScreenCTM().inverse());
+    return loc;
+}
 
-    if ((mst != msw | fst != fsw | fro != frt | rej != rejt) & wid_anim == null) {
+// Make the custom slider slidable (but snap to the ticks...)
+// extract the on_drag function from our previous gradient demo
+function on_drag(target, callback) {
+    // Make a sub-element of the svg draggable in svg coordinates
+    var ox=0, oy=0, dragging=false;  // incl offsets to center of circle
+
+    target.addEventListener('mousedown', function (evt) {
+        var loc = coords(evt);
+        var kx = target.getAttribute("x");
+        var ky = target.getAttribute("y");
+        ox = loc.x - kx;
+        oy = loc.y - ky;
+        dragging=true;
+    });
+
+    gui.addEventListener('mousemove', function (evt) {
+        if (evt.buttons == 0)
+            dragging = false;
+        if (dragging) {
+            var loc = coords(evt);
+            var cx = loc.x - ox;
+            var cy = loc.y - oy;
+            callback(cx, cy);
+        }
+    });
+}
+
+// <path id="slider_bar" d="m93 11 h27.5" fill="none" stroke="#000" stroke-width=".9"/>
+// <rect id="slider_knob" x="92" y="8" width="2" height="6" fill="#00A" stroke="#000" stroke-width=".2"/>
+var slider_knob = document.getElementById("slider_knob");
+var slider_bar = document.getElementById("slider_bar");
+var readout = document.getElementById("readout");
+
+
+
+on_drag(slider_knob, function(x,y) {
+    // 2014 @ x=39, 2 years = 27 units
+    var step = Math.max(0, Math.min(2, Math.round((x-39)/27)));
+    update_slider(step);
+});
+
+
+function update_slider(step) {
+    var year = 2014 + 2*step;
+    
+    // Adjust the text
+    readout.innerHTML= "" + year;
+
+    // adjust the slider components
+    var x = 38 + 27 * step;
+    slider_knob.setAttribute("x", x);
+    slider_bar.setAttribute("d", "m" + x + " 11 h" + (120 - x));
+
+    // now animate the rest of the plot
+    mst = ms_width[step];
+    fst = fs_width[step];
+    rejt = rej_reason[step];
+
+    if ((mst != msw | fst != fsw | rej != rejt) & wid_anim == null) {
         wid_anim = setInterval(wid_animation, 20);
     }
-
+    
 }
-slider.oninput = slidefn;
+
+// make sure the initial settings are consistent
+update_slider(0);
 
 
 // Handle the browser position scrolling
@@ -94,12 +153,12 @@ function scrollin(ident, callback) {
         var scroll = window.pageYOffset;
         var ih = window.innerHeight/3;
         var rect = item.getBoundingClientRect();
-        if (scroll > rect.top + rect.height - ih & t < 1) {
+        if (scroll > rect.top + 0.75*rect.height - ih & t < 1) {
             step = 0.05;   
             if (timer == null)
                 timer = setInterval(anim, 10);
         }
-        if (scroll < rect.top - ih & t > 0) {
+        if (scroll < rect.top + 0.5*rect.height - ih & t > 0) {
             step = -0.05;   
             if (timer == null)
                 timer = setInterval(anim, 10);
@@ -124,15 +183,15 @@ function scrollin(ident, callback) {
 }
 
 
-scrollin("rejectors", function (item, t) {
-    item.setAttribute("transform", "translate(" + (1. - t) * 85 + " 0)");
+scrollin("annotations", function (item, t) {
+    item.setAttribute("transform", "translate(" + (1. - t) * 95 + " 0)");
 });
 
 
 var item2 = document.getElementById("woman_selector");
 
 scrollin("man_selector", function (item, t) {
-    var xx = 3 + (t - 1) * 150;
+    var xx = .257 + (t - 1) * 150;
     item.setAttribute("x", xx);
     item2.setAttribute("x", xx);
 });
