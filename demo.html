@@ -55,9 +55,10 @@
     <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> 
     <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> <P>...</P> 
 
-    <div style="margin: auto; max-width: 8in" id="main">
+    <!-- <div style="margin: auto; max-width: 1000px; display: inline-block;" id="main"> -->
+    <div style="margin: auto; max-width: 1000px; min-width:100px" id="main">
 
-    <svg id="gradient_widget" width="8in" version="1.1" viewBox="0 0 176 108" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg id="gradient_widget" style="max-width: 100%;" version="1.1" viewBox="0 0 176 108" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <symbol id="woman">
       <g id="woman_transform" transform="matrix(.553 0 0 .537 -70 -42.7)">
@@ -168,33 +169,36 @@
       <text class="svgtxt" x="94" y="94"  fill="#000" font-family="sans-serif" font-size="3.25px" font-weight="bold">Selected by the AI</text>
     </g>
     <g id="slider">
-      <!-- the horizontal lines -->
-      <path d="m39 11h81" fill="none" stroke="#bbb" stroke-width="2.5"/>
-      <path d="m38.75 21h81.4" fill="none" stroke="#000" stroke-width="1px"/>
-      <circle cx="120" cy="11" r="1.5" fill="#000"/>
 
       <!-- the ticks -->
-      <path d="m39 17v4"  fill="none" stroke="#000" stroke-width=".5px"/>
-      <path d="m52.5 19v2" fill="none" stroke="#000" stroke-width=".5px"/>
-      <path d="m66 17v4" fill="none" stroke="#000" stroke-width=".5px"/>
-      <path d="m79.5 19v2" fill="none" stroke="#000" stroke-width=".5px"/>
-      <path d="m93 17v4" fill="none" stroke="#000" stroke-width=".5px"/>
-      <path d="m106.5 19v2" fill="none" stroke="#000" stroke-width=".5px"/>
-      <path d="m120 17v4.25" fill="none" stroke="#000" stroke-width=".5px"/>
+      <path d="m38.75 22.5h81.4" fill="none" stroke="#000" stroke-width="1px"/>
+      <path d="m39 18.5v4"  fill="none" stroke="#000" stroke-width=".5px"/>
+      <path d="m52.5 20.5v2" fill="none" stroke="#000" stroke-width=".5px"/>
+      <path d="m66 18.5v4" fill="none" stroke="#000" stroke-width=".5px"/>
+      <path d="m79.5 20.5v2" fill="none" stroke="#000" stroke-width=".5px"/>
+      <path d="m93 18.5v4" fill="none" stroke="#000" stroke-width=".5px"/>
+      <path d="m106.5 20.5v2" fill="none" stroke="#000" stroke-width=".5px"/>
+      <path d="m120 18.5v4.25" fill="none" stroke="#000" stroke-width=".5px"/>
 
       <!-- the tick markers -->
-      <text class="svgtxt"  x="39" y="25" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2014</text>
-      <text class="svgtxt"  x="66" y="25" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2016</text>
-      <text class="svgtxt"  x="93" y="25" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2018</text>
-      <text class="svgtxt" x="120" y="25" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2020</text>
+      <text class="svgtxt"  x="39" y="26.5" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2014</text>
+      <text class="svgtxt"  x="66" y="26.5" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2016</text>
+      <text class="svgtxt"  x="93" y="26.5" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2018</text>
+      <text class="svgtxt" x="120" y="26.5" fill="#000" font-family="sans-serif" font-size="3.5px" font-weight="bold" text-anchor="middle">2020</text>
 
       <!-- instructions -->
-      <text class="svgtxt" x="37" y="12" fill="#000" font-family="sans-serif" font-size="4px" text-anchor="end">Slide to adjust</text>
+      <text class="svgtxt" x="35.5" y="12" fill="#000" font-family="sans-serif" font-size="4px" text-anchor="end">Slide to adjust</text>
 
       <!-- interactive part -->
-      <path id="slider_bar" d="m38 11 h82" fill="none" stroke="#000" stroke-width=".9"/>
-      <rect id="slider_knob" x="38" y="8" width="2" height="6" fill="#00A" stroke="#000" stroke-width=".2"/>
-      <text class="svgtxt" x="39" y="5" fill="#000" font-family="sans-serif" font-size="4px" font-weight="bold">Training Data Interval: <tspan fill="blue" id="readout">2014</tspan> - 2020</text>
+      <g id="slider_active">
+      <rect x="39" y="6" width="81" height="13" fill="#FFF"></rect>
+        <path d="m39 11h81" fill="none" stroke="#bbb" stroke-width="2.5"/>
+        <circle cx="120" cy="11" r="1.5" fill="#000"/>
+        <path id="slider_bar" d="m38 11 h82" fill="none" stroke="#000" stroke-width=".9"/>
+        <path transform="translate(39,0)" style="fill:#1a83c1;stroke:#000;stroke-width:0.25px" d="m -2.5,6 c0,7.5 0,7.5 0,7.5 l 2.5,4.5 2.5,-4.25 V 6 h -5" id="slider_knob" />
+      </g>
+
+      <text class="svgtxt" x="39" y="5" fill="#000" font-family="sans-serif" font-size="4px" font-weight="bold">Training Data Interval: <tspan fill="" id="readout">2014</tspan> - 2020</text>
 
     </g>
     </svg>
