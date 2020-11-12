@@ -76,57 +76,61 @@ function coords(evt) {
     return loc;
 }
 
-// Make the custom slider slidable (but snap to the ticks...)
-// extract the on_drag function from our previous gradient demo
-function on_drag(target, callback) {
-    // Make a sub-element of the svg draggable in svg coordinates
-    var ox=0, oy=0, dragging=false;  // incl offsets to center of circle
-
-    target.addEventListener('mousedown', function (evt) {
-        var loc = coords(evt);
-        var kx = target.getAttribute("x");
-        var ky = target.getAttribute("y");
-        ox = loc.x - kx;
-        oy = loc.y - ky;
-        dragging=true;
-    });
-
-    gui.addEventListener('mousemove', function (evt) {
-        if (evt.buttons == 0)
-            dragging = false;
-        if (dragging) {
-            var loc = coords(evt);
-            var cx = loc.x - ox;
-            var cy = loc.y - oy;
-            callback(cx, cy);
-        }
-    });
-}
 
 // <path id="slider_bar" d="m93 11 h27.5" fill="none" stroke="#000" stroke-width=".9"/>
 // <rect id="slider_knob" x="92" y="8" width="2" height="6" fill="#00A" stroke="#000" stroke-width=".2"/>
 var slider_knob = document.getElementById("slider_knob");
 var slider_bar = document.getElementById("slider_bar");
 var readout = document.getElementById("readout");
+var slider_active = document.getElementById("slider_active");
 
 
+// Make the custom slider work
+// slidable (but snap to the ticks...)
+var dragging=false;
+var step=0;
+function sld_callback(evt) {
+    // if (evt.buttons == 0)
+    if (evt.pressure == 0)
+        dragging = false;
+    if (dragging) {
+        var loc = coords(evt);
+        var cx = loc.x;
+        // 2014 @ x=39, 2 years = 27 units
+        step = Math.max(0, Math.min(2, Math.round((cx-39)/27)));
+        update_slider();
+    }
+};
 
-on_drag(slider_knob, function(x,y) {
-    // 2014 @ x=39, 2 years = 27 units
-    var step = Math.max(0, Math.min(2, Math.round((x-39)/27)));
-    update_slider(step);
+slider_active.addEventListener('pointerdown', function (evt) {
+    dragging=true;
+    sld_callback(evt);
 });
 
+document.addEventListener('keydown', function(evt) {
+    var last = step;
+    if (evt.code == "ArrowLeft" & step > 0)
+        step -= 1;
+    if (evt.code == "ArrowRight" & step < 2)
+        step += 1;
+    if (step != last)
+        update_slider();
+});
 
-function update_slider(step) {
+// seems touch events don't always trigger pointermove
+// but maybe support the pointers anyway
+slider_active.addEventListener('pointermove', sld_callback);
+
+
+function update_slider() {
     var year = 2014 + 2*step;
     
     // Adjust the text
     readout.innerHTML= "" + year;
 
     // adjust the slider components
-    var x = 38 + 27 * step;
-    slider_knob.setAttribute("x", x);
+    var x = 39 + 27 * step;
+    slider_knob.setAttribute("transform", "translate(" + x + ", 0)");  // used to set x property
     slider_bar.setAttribute("d", "m" + x + " 11 h" + (120 - x));
 
     // now animate the rest of the plot
@@ -149,21 +153,23 @@ function scrollin(ident, callback) {
     var timer=null, step=0, t=0;
     var item = document.getElementById(ident);
     
-    window.addEventListener('scroll', function(e) {
+    function scrollfn(e) {
         var scroll = window.pageYOffset;
-        var ih = window.innerHeight/3;
+        var ih = window.innerHeight * .7;
         var rect = item.getBoundingClientRect();
-        if (scroll > rect.top + 0.75*rect.height - ih & t < 1) {
+        var mid = rect.top + rect.height * 0.5;
+        if (scroll > mid + 50 - ih & t < 1) {
             step = 0.05;   
             if (timer == null)
                 timer = setInterval(anim, 10);
         }
-        if (scroll < rect.top + 0.5*rect.height - ih & t > 0) {
+        if (scroll < mid - ih & t > 0) {
             step = -0.05;   
             if (timer == null)
                 timer = setInterval(anim, 10);
         }
-    });
+    }
+    window.addEventListener('scroll', scrollfn);
 
     function anim() {
         t += step;
@@ -179,7 +185,9 @@ function scrollin(ident, callback) {
         }
         callback(item, t);
     }
-    callback(item, t);
+    
+    // proc initial
+    scrollfn(null);
 }
 
 
