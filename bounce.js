@@ -5,8 +5,8 @@
 var gui = document.getElementById("gradient_widget");
 
 // Positions of gui elements when updating
-var ms_width = [131.5, 131.5, 123];
-var fs_width = [96.5, 105.5, 114];
+var ms_width = [131.7, 131.7, 122.8];
+var fs_width = [96.5, 105.4, 113.7];
 var rej_reason = [0, 0, 1];  // one-hot indicator with linear transition
 var msw = ms_width[0], fsw = fs_width[0], rej = rej_reason[0]
 var mst = msw, fst=fsw, rejt = rej; // and default targets
@@ -40,7 +40,7 @@ function wid_animation() {
     msw = towards(msw, mst, step);
     fsw = towards(fsw, fst, step);
     rej = towards(rej, rejt, .04); // same step?
-    var fro = fsw + .257;  // female reject box offset = rhs of female select box
+    var fro = fsw + .3;  // female reject box offset = rhs of female select box
 
     // Set animation positions
     ws.setAttribute("width", fsw);
@@ -123,7 +123,7 @@ slider_active.addEventListener('pointermove', sld_callback);
 
 
 function update_slider() {
-    var year = 2014 + 2*step;
+    var year = 2015 + 2*step;
     
     // Adjust the text
     readout.innerHTML= "" + year;
@@ -131,7 +131,7 @@ function update_slider() {
     // adjust the slider components
     var x = 39 + 27 * step;
     slider_knob.setAttribute("transform", "translate(" + x + ", 0)");  // used to set x property
-    slider_bar.setAttribute("d", "m" + x + " 11 h" + (120 - x));
+    slider_bar.setAttribute("d", "m" + x + " 11 h" + (106.5 - x));  // was 120
 
     // now animate the rest of the plot
     mst = ms_width[step];
