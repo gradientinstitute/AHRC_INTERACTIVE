@@ -56,8 +56,9 @@ function wid_animation() {
     rej_bias.setAttribute("transform", "translate(" + (100 * a) + ", 0)")
     rej_err.setAttribute("transform", "translate(" + (100 * b) + ", 0)");
 
+
     // If finished, we can clear the animation timer
-    if (msw == mst && fsw == fst && rej == rejt) {
+    if (msw == mst && fsw == fst && rej == rejt && wid_anim != null) {
         clearInterval(wid_anim);
         wid_anim = null;
     }
@@ -148,46 +149,74 @@ function update_slider() {
 update_slider(0);
 
 
+// function getRealOffset() {
+//     // Compute interactive's offset, even if code is embedded in an iframe
+//     var y = window.pageYOffset;
+//     // var current = window;
+
+//     // while (current != window.top) {
+//     //     current = current.Parent;
+//     //     rect = frameElement.getBoundingClientRect()
+//     //     y += current.pageYOffset
+//     //     return window.pageYOffset;
+//     // }
+// }
+
+
 // Handle the browser position scrolling
 function scrollin(ident, callback) {
     var timer=null, step=0, t=0;
     var item = document.getElementById(ident);
     
-    function scrollfn(e) {
-        var scroll = window.pageYOffset;
-        var ih = window.innerHeight * .7;
-        var rect = item.getBoundingClientRect();
-        var mid = rect.top + rect.height * 0.5;
-        if (scroll > mid + 50 - ih & t < 1) {
-            step = 0.05;   
-            if (timer == null)
-                timer = setInterval(anim, 10);
-        }
-        if (scroll < mid - ih & t > 0) {
-            step = -0.05;   
-            if (timer == null)
-                timer = setInterval(anim, 10);
-        }
-    }
-    window.addEventListener('scroll', scrollfn);
+    // function scrollfn(e) {
+
+    //     var scroll = getRealOffset();
+    //     var ih = window.innerHeight * .7;
+    //     console.log("scrolled", scroll, ih);
+    //     var rect = item.getBoundingClientRect();
+    //     var mid = rect.top + rect.height * 0.5;
+    //     if (scroll > mid + 50 - ih & t < 1) {
+    //         step = 0.05;   
+    //         if (timer == null)
+    //             timer = setInterval(anim, 10);
+    //     }
+    //     if (scroll < mid - ih & t > 0) {
+    //         step = -0.05;   
+    //         if (timer == null)
+    //             timer = setInterval(anim, 10);
+    //     }
+    // }
+    // // window.addEventListener('scroll', scrollfn);
+
+    // // can only do this if the frames are on the same web server
+    // // (not even local files)
+    // window.parent.addEventListener('scroll', scrollfn)
+
+    // we run into cross origin problems if we do this on scroll
+    // so just do it on a timer
+    t = -1;
+    step = 0.05;
 
     function anim() {
         t += step;
-        if (t < 0.) {
-            t = 0.;
-            clearInterval(timer);
-            timer = null;
-        }
+        // if (t < 0.) {
+        //     t = 0.;
+        //     clearInterval(timer);
+        //     timer = null;
+        // }
         if (t > 1.) {
             t = 1.;
             clearInterval(timer);
             timer = null;
         }
-        callback(item, t);
+        if (t >= 0)
+            callback(item, t);
     }
+
+    timer = setInterval(anim, 10);
     
     // proc initial
-    scrollfn(null);
+    // scrollfn(null);
 }
 
 
